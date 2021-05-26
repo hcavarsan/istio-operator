@@ -119,7 +119,7 @@ func (r *Reconciler) getValues() string {
 				"includeIPRanges":              r.Config.Spec.IncludeIPRanges,
 				"excludeIPRanges":              r.Config.Spec.ExcludeIPRanges,
 				"excludeInboundPorts":          "",
-				"excludeOutboundPorts":         "",
+				"excludeOutboundPorts":         r.Config.Spec.ExcludeOutboundPorts,
 				"privileged":                   r.Config.Spec.Proxy.Privileged,
 				"readinessFailureThreshold":    30,
 				"readinessInitialDelaySeconds": 1,

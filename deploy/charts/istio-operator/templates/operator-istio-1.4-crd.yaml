@@ -174,6 +174,9 @@ spec:
             excludeIPRanges:
               description: ExcludeIPRanges the range where not to capture egress traffic
               type: string
+            excludeOutboundPorts:
+              description: excludeOutboundPorts the ports where not to capture egress traffic
+              type: string
             galley:
               description: Galley configuration options
               properties:

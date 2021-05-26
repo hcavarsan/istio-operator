@@ -698,6 +698,9 @@ type IstioSpec struct {
 	// ExcludeIPRanges the range where not to capture egress traffic
 	ExcludeIPRanges string `json:"excludeIPRanges,omitempty"`
 
+	// excludeOutboundPorts the range where not to capture egress traffic
+	ExcludeOutboundPorts string `json:"excludeOutboundPorts,omitempty"`
+
 	// List of namespaces to label with sidecar auto injection enabled
 	AutoInjectionNamespaces []string `json:"autoInjectionNamespaces,omitempty"`
 
